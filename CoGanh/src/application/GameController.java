@@ -11,6 +11,16 @@ import javafx.scene.shape.Circle;
 public class GameController {
 
     @FXML
+    private Circle piece1;  // Đặt tên này trùng với ID bạn đặt cho Circle trong Scene Builder
+
+    public void asaaa() {
+        ChessPiece newpiece = new ChessPiece(piece1, Color.RED);
+        
+        // Để thay đổi màu sắc của Circle, bạn có thể sử dụng:
+        // piece.setColor(Color.BLUE);
+    }
+
+    @FXML
     private GridPane board;
 
     @FXML

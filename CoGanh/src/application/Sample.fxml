@@ -1,27 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController" prefHeight="400.0" prefWidth="600.0">
-    <top>
-        <MenuBar>
-            <menus>
-                <Menu text="File">
-                    <items>
-                        <MenuItem fx:id="exitMenu" text="Thoát" onAction="#exitGame"/>
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
-    </top>
-    <center>
-        <!-- Bàn cờ được đặt trong một GridPane -->
-        <GridPane fx:id="board" alignment="CENTER" hgap="5.0" vgap="5.0" prefHeight="300.0" prefWidth="300.0">
-            <!-- Ví dụ với một ô cờ, bạn có thể mở rộng số lượng ô theo ý muốn -->
-            <Circle fx:id="cell00" stroke="BLACK" fill="TRANSPARENT" radius="20.0" onMouseClicked="#handleMove"/>
-            <!-- ... Thêm các ô cờ khác tương tự ... -->
-        </GridPane>
-    </center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="NewGame" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Close">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Exit" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <StackPane prefHeight="753.0" prefWidth="956.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="425.0" fitWidth="479.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../Screenshot%202024-01-08%20225508.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </ImageView>
+            <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="580.0" StackPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="177.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="278.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Circle fx:id="piece15" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
+                  <Circle fx:id="piece7" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Circle fx:id="piece13" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece14" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
+                  <Circle fx:id="piece16" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                  <Circle fx:id="piece2" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                  <Circle fx:id="piece3" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+                  <Circle fx:id="piece4" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fx:id="piece6" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Circle fx:id="piece5" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Circle>
+                  <Circle fx:id="piece8" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Circle fx:id="piece9" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece12" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece10" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece11" fill="#ff1f1f" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece1" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+   <right>
+      <VBox prefHeight="965.0" prefWidth="314.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <TextField alignment="CENTER" editable="false" prefHeight="187.0" prefWidth="190.0" text="ColorPiece's Turn">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="46.0" stroke="BLACK" strokeType="INSIDE" width="138.0" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+               </children>
+            </StackPane>
+            <TextArea prefHeight="687.0" prefWidth="297.0" text="LUẬT CHƠI:&#10;- Hai người chơi di chuyển các quân cờ theo thứ tự màu quân chọn trước. Các quân cờ có thể di chuyển theo đường chéo, ngang hoặc thẳng miễn là điểm đến không có quân nào đang đứng tại đó.&#10;&#10;- Ăn quân: Khi có 1 quân màu 1 đứng giữa hai quân màu 2 thì hai quân này chuyển thành màu 1, có thể 3 quân này đứng theo hàng chéo, ngang hoặc dọc. Có thể bắt 2, 4 hoặc 6 quân. &#10;&#10;- Người chơi cũng có thể ăn 1 hoặc nhiều quân khi các quân đó bị bao bởi quân khác màu, nghĩa là chúng không thể di chuyển được đến bất kì vị trí nào nữa.&#10;&#10;- Điều kiện thắng: Khi trên bàn cờ chỉ còn 1 màu quân." wrapText="true" />
+         </children>
+      </VBox>
+   </right>
 </BorderPane>
