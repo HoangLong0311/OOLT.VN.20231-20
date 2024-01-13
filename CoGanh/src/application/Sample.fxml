@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController" prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem fx:id="exitMenu" text="Thoát" onAction="#exitGame"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <!-- Bàn cờ được đặt trong một GridPane -->
+        <GridPane fx:id="board" alignment="CENTER" hgap="5.0" vgap="5.0" prefHeight="300.0" prefWidth="300.0">
+            <!-- Ví dụ với một ô cờ, bạn có thể mở rộng số lượng ô theo ý muốn -->
+            <Circle fx:id="cell00" stroke="BLACK" fill="TRANSPARENT" radius="20.0" onMouseClicked="#handleMove"/>
+            <!-- ... Thêm các ô cờ khác tương tự ... -->
+        </GridPane>
+    </center>
+</BorderPane>
