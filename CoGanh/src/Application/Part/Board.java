@@ -17,7 +17,10 @@ private void setupBoard() {
        }
    }
 }
-
+//Lấy kích thước bàn cờ
+public int getSize() {
+	return grid.length;
+}
 public Square getSquare(int x, int y) {
    return grid[x][y];
 }
