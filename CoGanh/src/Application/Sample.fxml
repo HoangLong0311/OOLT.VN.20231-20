@@ -53,26 +53,26 @@
                 <RowConstraints maxHeight="300.0" minHeight="20.0" prefHeight="125.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Circle fx:id="piece15" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
-                  <Circle fx:id="piece7" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                  <Circle fx:id="piece13" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
-                  <Circle fx:id="piece14" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
-                  <Circle fx:id="piece16" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
-                  <Circle fx:id="piece2" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-                  <Circle fx:id="piece3" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
-                  <Circle fx:id="piece4" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
-                  <Circle fx:id="piece6" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                  <Circle fx:id="piece5" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4">
+                  <Circle fx:id="piece15" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
+                  <Circle fx:id="piece7" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Circle fx:id="piece13" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece14" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
+                  <Circle fx:id="piece16" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                  <Circle fx:id="piece2" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                  <Circle fx:id="piece3" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+                  <Circle fx:id="piece4" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+                  <Circle fx:id="piece6" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Circle fx:id="piece5" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </Circle>
-                  <Circle fx:id="piece8" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                  <Circle fx:id="piece9" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                  <Circle fx:id="piece12" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <Circle fx:id="piece10" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                  <Circle fx:id="piece11" fill="#ff1f1f" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <Circle fx:id="piece1" fill="DODGERBLUE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="piece8" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Circle fx:id="piece9" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece12" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece10" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece11" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Circle fx:id="piece1" fill="WHITE" onMouseDragged="#handlePieceDrag" onMousePressed="#handlePieceDragStart" onMouseReleased="#handlePieceDragEnd" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
                <StackPane.margin>
                   <Insets />
@@ -91,7 +91,7 @@
                         <Insets />
                      </opaqueInsets>
                   </TextField>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="46.0" stroke="BLACK" strokeType="INSIDE" width="138.0" StackPane.alignment="BOTTOM_CENTER">
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="46.0" stroke="BLACK" strokeType="INSIDE" width="138.0" StackPane.alignment="BOTTOM_CENTER">
                      <StackPane.margin>
                         <Insets bottom="10.0" />
                      </StackPane.margin>
